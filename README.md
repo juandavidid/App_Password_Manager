@@ -1,3 +1,7 @@
+# Interface-inspiraciones
+
+https://www.esedsl.com/es/gestor-contrasenas
+
 # AppPasswordManager
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.

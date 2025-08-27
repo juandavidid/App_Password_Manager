@@ -1,0 +1,19 @@
+.header {
+  color: white;
+  background-color: brown;
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.searcher {
+  width: 680px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+}
