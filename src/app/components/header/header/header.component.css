@@ -16,4 +16,14 @@
   height: 45px;
   border-radius: 10px;
   border: none;
+  opacity: 0.3;
+  padding-left: 36px;
+}
+/*aplicamos pseudo-elemento*/
+.searcher::placeholder {
+  font-size: 16px;
+}
+/*aplicamos pseudo-clase*/
+.searcher:focus {
+  outline: none; /*quita el borde interno del input*/
 }

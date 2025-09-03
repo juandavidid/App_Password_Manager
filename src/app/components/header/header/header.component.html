@@ -5,15 +5,26 @@
       >Manage Pass</span
     >
     <!--Buscador-->
-    <form [ngStyle]="{ 'margin-right': '160px' }" action="" method="">
+    <form
+      [ngStyle]="{ 'margin-right': '160px', position: 'relative' }"
+      action=""
+      method=""
+    >
+      <!--Icono buscar-->
+      <i
+        [ngStyle]="{ position: 'absolute', top: '16px', left: '12px' }"
+        class="fa-solid fa-magnifying-glass"
+      ></i>
       <input
         class="searcher"
         type="text"
         id="buscador"
-        placeholder="Buscador"
+        placeholder="Search my vault"
       />
     </form>
     <!--Imagen-->
-    <span [ngStyle]="{ 'margin-right': '32px' }">Imagen</span>
+    <span [ngStyle]="{ 'margin-right': '38px' }"
+      ><i [ngStyle]="{ 'font-size': '30px' }" class="fa-solid fa-user"></i
+    ></span>
   </div>
 </header>
