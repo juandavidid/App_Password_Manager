@@ -1,0 +1,17 @@
+<main [ngStyle]="{ width: '1050px', height: '459px' }">
+  <!--Tarjeta con informacion-->
+  <div
+    [ngStyle]="{
+      display: 'flex',
+      'justify-content': 'center',
+      'flex-wrap': 'wrap',
+      'padding-top': '32px'
+    }"
+  >
+    <div *ngFor="let password of passwordArray" class="card">
+      <p>Icono</p>
+      <span>Contraseña</span>
+      <span>Correo</span>
+    </div>
+  </div>
+</main>
