@@ -9,9 +9,41 @@
     }"
   >
     <div *ngFor="let password of passwordArray" class="card">
-      <p>Icono</p>
-      <span>Contraseña</span>
-      <span>Correo</span>
+      <div
+        [ngStyle]="{
+          height: '75px',
+          display: 'flex',
+          'justify-content': 'center'
+        }"
+      >
+        <!--Icono de Contraseña-->
+        <i
+          [ngStyle]="{ 'padding-top': '24px', 'font-size': '45px' }"
+          class="fa-solid fa-lock"
+        ></i>
+      </div>
+      <div
+        [ngStyle]="{
+          height: '75px',
+          display: 'flex',
+          'flex-direction': 'column',
+          'padding-left': '16px',
+          'padding-top': '8px',
+          gap: '6px'
+        }"
+      >
+        <!--Nombre de la plataforma-->
+        <span
+          [ngStyle]="{
+            'font-size': '20px',
+            color: 'black',
+            'font-weight': '900'
+          }"
+          >Project jira</span
+        >
+        <!--Nombre del Correo-->
+        <span>jane.millergamil.com</span>
+      </div>
     </div>
   </div>
 </main>
