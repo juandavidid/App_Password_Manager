@@ -1,5 +1,24 @@
 <aside
-  [ngStyle]="{ 'background-color': '#8c8c8c', height: '682px', width: '210px' }"
+  [ngStyle]="{ 'background-color': '#8c8c8c', height: '682px', width: '230px' }"
 >
-  contenido secundario
+  <div>
+    <ul [ngStyle]="{ margin: '0px', padding: '0px', 'padding-left': '16px' }">
+      <!--Estructura de contro For-->
+      <li
+        *ngFor="let i of arrayNamePasswoerd"
+        [ngStyle]="{ 'list-style-type': 'none', display: 'flex' }"
+      >
+        <!--Icono de Contraseña-->
+        <mat-icon [ngStyle]="{ 'padding-top': '24px', 'font-size': '20px' }">{{
+          i.nameIcons
+        }}</mat-icon>
+        <!--Texto-->
+        <div [ngStyle]="{ 'padding-top': '26px' }">
+          <span [ngStyle]="{ 'padding-left': '10px',  }"
+            >{{ i.nameitems }}
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
 </aside>
