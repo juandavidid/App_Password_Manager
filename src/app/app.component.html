@@ -1,5 +1,13 @@
 <!--Componente principal
 <app-home />
 -->
-<app-login></app-login>
+<!--<app-login></app-login>-->
+
+<ng-container *ngIf="statusComponet">
+  <app-login></app-login>
+</ng-container>
+<ng-container *ngIf="valor">
+  <app-home />
+</ng-container>
+
 <router-outlet />

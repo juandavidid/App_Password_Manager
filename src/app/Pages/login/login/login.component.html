@@ -1,8 +1,56 @@
-<div>
+<div
+  [ngStyle]="{
+    height: '100vh',
+    display: 'flex',
+    'justify-content': 'center',
+    'align-items': 'center',
+    'flex-direction': 'column',
+    gap: '130px'
+  }"
+>
+  <div class="container-curva">
+    <span
+      [ngStyle]="{ 'margin-left': '32px', 'font-size': '35px', color: 'white' }"
+      >Manage Pass</span
+    >
+  </div>
+  <!--Contenedor Login-->
   <div class="container-items-login">
-    <span>Log In</span>
-    <input type="text" placeholder="Username" />
+    <span
+      [ngStyle]="{
+        'margin-bottom': '16px',
+        'text-align': 'center',
+        'font-size': '50px'
+      }"
+      >Log In</span
+    >
+    <input
+      [ngStyle]="{ 'margin-bottom': '16px' }"
+      type="text"
+      placeholder="Username"
+    />
     <input type="text" placeholder="Password" />
-    <button>Log in</button>
+    <button
+      [ngStyle]="{
+        height: '45px',
+        'border-radius': '32px',
+        'margin-top': '32px',
+        'font-size': '22px',
+        'background-color': '#c31432',
+        color: 'white',
+        border: 'none'
+      }"
+      [routerLink]="['/home', 'true']"
+    >
+      Log in
+    </button>
+    <span
+      [ngStyle]="{
+        'text-align': 'center',
+        'margin-top': '16px',
+        'font-size': '16px'
+      }"
+      >Don't Have An Account ? Sign Up</span
+    >
   </div>
 </div>
