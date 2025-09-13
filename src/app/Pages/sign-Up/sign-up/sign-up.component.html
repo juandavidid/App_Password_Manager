@@ -2,7 +2,6 @@
   [ngStyle]="{
     height: '100vh',
     display: 'flex',
-
     'align-items': 'center',
     'flex-direction': 'column',
     
@@ -10,12 +9,7 @@
 >
   <div class="container-curva">
     <span
-      [ngStyle]="{
-        'margin-left': '32px',
-        'margin-top': '32px',
-        'font-size': '35px',
-        color: 'white'
-      }"
+      [ngStyle]="{ 'margin-left': '32px', 'font-size': '35px', color: 'white' }"
       >Manage Pass</span
     >
   </div>
@@ -27,12 +21,22 @@
         'text-align': 'center',
         'font-size': '50px'
       }"
-      >Log In</span
+      >Sing Up</span
     >
     <input
       [ngStyle]="{ 'margin-bottom': '16px' }"
       type="text"
+      placeholder="Email or mobile"
+    />
+    <input
+      [ngStyle]="{ 'margin-bottom': '16px' }"
+      type="text"
       placeholder="Username"
+    />
+    <input
+      [ngStyle]="{ 'margin-bottom': '16px' }"
+      type="text"
+      placeholder="Date of Birth"
     />
     <input type="text" placeholder="Password" />
     <button
@@ -45,9 +49,8 @@
         color: 'white',
         border: 'none'
       }"
-      routerLink="/home"
     >
-      Log in
+      Signup
     </button>
     <span
       [ngStyle]="{
@@ -55,8 +58,8 @@
         'margin-top': '16px',
         'font-size': '16px'
       }"
-      routerLink="/sign-up"
-      >Don't Have An Account ? Sign Up</span
+      routerLink="/login"
+      >Already have on occojnt ? LOG IN</span
     >
   </div>
 </div>

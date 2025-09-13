@@ -1,8 +1,6 @@
 .container-items-login {
   width: 300px;
-  height: 300px;
   /*border: 2px solid black;*/
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
 }
