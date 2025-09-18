@@ -6,7 +6,7 @@
     >
     <!--Buscador-->
     <form
-      [ngStyle]="{ 'margin-right': '160px', position: 'relative' }"
+      [ngStyle]="{ 'margin-right': '79px', position: 'relative' }"
       action=""
       method=""
     >
@@ -22,9 +22,44 @@
         placeholder="Search my vault"
       />
     </form>
-    <!--Imagen-->
+    <!--Imagen
     <span [ngStyle]="{ 'margin-right': '38px' }"
       ><i [ngStyle]="{ 'font-size': '30px' }" class="fa-solid fa-user"></i
     ></span>
+    -->
+
+    <div
+      [ngStyle]="{
+        width: '100px',
+        height: '100px',
+        'margin-right': '75px',
+        'padding-top': '64px'
+      }"
+    >
+      <!--Imagen-->
+      <i
+        [ngStyle]="{ 'font-size': '47px', 'margin-left': '64px' }"
+        class="fa-solid fa-user"
+        (click)="toggleMenu($event)"
+        *ngIf="displayIcon"
+      ></i>
+      <div class="container-menu" *ngIf="menuOpen" (click)="toggleMenu($event)">
+        <!--Imagen-->
+        <i
+          [ngStyle]="{ 'font-size': '47px', 'margin-left': '64px' }"
+          class="fa-solid fa-user"
+        ></i>
+        <!--Nombre-->
+        <span class="nameUser">{{ userName }}</span>
+        <!--Menu Desplegable-->
+        <div class="container-items" *ngIf="menuOpen">
+          <ul [ngStyle]="{ color: 'black' }">
+            <li>Perfil</li>
+            <li>Ajustes</li>
+            <li>Cerrar sesion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </header>

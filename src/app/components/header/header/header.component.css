@@ -27,3 +27,29 @@
 .searcher:focus {
   outline: none; /*quita el borde interno del input*/
 }
+
+/*Estilos Menu*/
+.container-menu {
+  border: 1px solid black;
+  height: 260px;
+  width: 171px;
+}
+
+.container-menu {
+}
+
+.container-items {
+  margin-top: 25px;
+  border-top: 1px solid black;
+}
+
+.nameUser {
+  display: inline-block;
+  margin-left: 55px;
+  margin-top: 20px;
+  color: black;
+}
+
+li {
+  margin-bottom: 20px;
+}
